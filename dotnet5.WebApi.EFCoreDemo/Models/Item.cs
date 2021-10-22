@@ -9,6 +9,7 @@ namespace dotnet5.WebApi.EFCoreDemo.Models
     {
         public int Id { get; set; }
         public string Value { get; set; }
-        public int DateUpdated { get; set; }
+        public Guid? ComputedValue { get; set; }
+        public Guid ComputedValue2 { get; set; }
     }
 }

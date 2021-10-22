@@ -38,6 +38,7 @@ namespace dotnet5.WebApi.SerilogDemo
                     // 7. Go to Log Stream and observe the logs
                     Log.Logger = new LoggerConfiguration()
                         .MinimumLevel.Debug()
+                        //.WriteTo.File("logfile.txt")
                         .WriteTo.Console()
                         .CreateLogger();
                 }
@@ -67,6 +68,8 @@ namespace dotnet5.WebApi.SerilogDemo
                              // Used to filter out potentially bad data due debugging.
                              // Very useful when doing Seq dashboards and want to remove logs under debugging session.
                              loggerConfiguration.Enrich.WithProperty("DebuggerAttached", Debugger.IsAttached);
+
+                             //loggerConfiguration.WriteTo.File(@"logs\logfile.txt");
 #endif
                          });
                 });

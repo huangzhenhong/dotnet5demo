@@ -27,6 +27,22 @@ namespace dotnet5.WebApi.SerilogDemo.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogInformation("WeatherForecastController.Get() method get called");
+            _logger.LogInformation("PI is {PI:0.00}", Math.PI);
+            _logger.LogWarning("WeatherForecastController.Get() method get called");
+            _logger.LogError("WeatherForecastController.Get() method get called");
+            _logger.LogCritical("WeatherForecastController.Get() method get called");
+            _logger.LogTrace("WeatherForecastController.Get() method get called");
+
+            try
+            {
+                int i = 0;
+                int j = 1;
+                int k = j / i;
+            }
+            catch (Exception ex) {
+                _logger.LogError(ex, ex.Message);
+            }
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

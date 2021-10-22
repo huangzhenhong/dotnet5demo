@@ -13,7 +13,6 @@ namespace dotnet5.WebApi.EFCoreDemo.Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            
         }
     }
 }

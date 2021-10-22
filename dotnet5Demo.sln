@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet5.WebApi.EFCoreDemo",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3177E7C4-8E6E-4E00-A64D-FA3431493EF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet5.WebApi.SerilogDemo", "dotnet5.WebApi.SerilogDemo\dotnet5.WebApi.SerilogDemo.csproj", "{D7831644-6BC6-4FD0-87DD-DCFACB8C3D11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet5.WebApi.SerilogDemo", "dotnet5.WebApi.SerilogDemo\dotnet5.WebApi.SerilogDemo.csproj", "{D7831644-6BC6-4FD0-87DD-DCFACB8C3D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet5.WebApi.AzureRedisDemo", "dotnet5.WebApi.AzureRedisDemo\dotnet5.WebApi.AzureRedisDemo.csproj", "{79EB0B19-0A1D-4F84-A2D4-2EF2448B165E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D7831644-6BC6-4FD0-87DD-DCFACB8C3D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7831644-6BC6-4FD0-87DD-DCFACB8C3D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7831644-6BC6-4FD0-87DD-DCFACB8C3D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EB0B19-0A1D-4F84-A2D4-2EF2448B165E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EB0B19-0A1D-4F84-A2D4-2EF2448B165E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EB0B19-0A1D-4F84-A2D4-2EF2448B165E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EB0B19-0A1D-4F84-A2D4-2EF2448B165E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -41,11 +41,11 @@ namespace dotnet5.WebApi.EFCoreDemo
             var _item = await _dbContext.Items.Where(x => x.Id == item.Id).FirstOrDefaultAsync();
             if (_item == default)
             {
-                await _dbContext.Items.AddAsync(new Item { Value = item.Value, DateUpdated = item.DateUpdated });
+                await _dbContext.Items.AddAsync(new Item { Id = item.Id, Value = item.Value });
             }
             else {
                 _item.Value = item.Value;
-                _item.DateUpdated = item.DateUpdated;
+                //_item.DateUpdated = item.DateUpdated;
             }
 
             _dbContext.SaveChanges();
